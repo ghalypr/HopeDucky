@@ -3,12 +3,38 @@ Rubber Ducky As C++ Programme
 
 ## Usage
 
-Below is another example of displaying
-````python
-import csv
 
-with open("sample.csv","r") as csvinput: # read input csv file
-    reader = csv.reader(csvinput) # create a reader
-    for row in reader:
-        print(row[0])
+````C++
+
+#include "include/HopeDucky.h"
+
+
+using namespace std;
+
+
+int main(){
+
+
+  WinKey();
+  Sleep(500);
+  PressKeys("run");
+  Sleep(500);
+  ReturnKey();
+  Sleep(500);
+  PressKeys("powershell");
+  Sleep(500);
+  ReturnKey();
+  Sleep(500);
+  PressKeys("echo 'Hello World From HopeDucky!'");
+  Sleep(500);
+  ReturnKey();
+
+
+
+
+    return 0x0;
+}
+
+
+
 ````
