@@ -1,6 +1,16 @@
 # HopeDucky
 Rubber Ducky As C++ Programme
 
+## Install
+
+````
+
+git clone https://github.com/ghalypr/HopeDucky
+
+````
+
+
+
 ## Usage
 
 
