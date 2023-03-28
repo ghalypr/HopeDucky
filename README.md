@@ -5,7 +5,7 @@ Rubber Ducky As C++ Programme
 
 ````
 
-git clone https://github.com/ghalypr/HopeDucky
+git clone https://github.com/ghalypr/HopeDucky.git
 
 ````
 
@@ -18,12 +18,9 @@ git clone https://github.com/ghalypr/HopeDucky
 
 #include "include/HopeDucky.h"
 
-
 using namespace std;
 
-
 int main(){
-
 
   WinKey();
   Sleep(500);
@@ -38,8 +35,6 @@ int main(){
   PressKeys("echo 'Hello World From HopeDucky!'");
   Sleep(500);
   ReturnKey();
-
-
 
 
     return 0x0;
