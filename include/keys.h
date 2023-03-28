@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
-#include<sstream>
+#include <sstream>
 
 #include "./String2WString.h"
 
