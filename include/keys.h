@@ -14,4 +14,6 @@ void PressKeys(string str);
 
 void WinKey();
 
+void GUIR();
+
 void ReturnKey();
