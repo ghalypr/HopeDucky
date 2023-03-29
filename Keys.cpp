@@ -75,6 +75,39 @@ void WinKey(){
         SendInput(1, &ip, sizeof(INPUT));
 }
 
+
+void GUIR(){
+
+        INPUT ip;
+        // Set up a generic keyboard event.
+        ip.type = INPUT_KEYBOARD;
+        ip.ki.wScan = 0; // hardware scan code for key
+        ip.ki.time = 0;
+        ip.ki.dwExtraInfo = 0;
+
+        // Left LWIN key
+        ip.ki.wVk = VK_LWIN; // virtual-key code for the key
+        ip.ki.dwFlags = 0; // 0 for key press
+        SendInput(1, &ip, sizeof(INPUT));
+        
+
+        // seconed
+        ip.ki.wVk = 0x52;
+        ip.ki.dwFlags = 0;
+        SendInput(1, &ip, sizeof(INPUT));
+
+        // Release the <<R>> key
+        ip.ki.wVk = 0x52;
+        ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
+        SendInput(1, &ip, sizeof(INPUT));
+
+        // Release the <<LWIN>> key
+        ip.ki.wVk = VK_LWIN;
+        ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
+        SendInput(1, &ip, sizeof(INPUT));
+}
+
+
 void ReturnKey(){
 
         INPUT ip;
